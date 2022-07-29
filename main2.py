@@ -1,5 +1,14 @@
 import pygame
 import random
+from settings import Settings
+from ship import Ship
+from alien import Alien
+
+
+
+
+
+
 
 # Initialize the pygame
 pygame.init()
@@ -45,6 +54,8 @@ while running:
     elif alienx >= 736:
         alienx_change = -0.2
         alieny += alieny_change
+
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
